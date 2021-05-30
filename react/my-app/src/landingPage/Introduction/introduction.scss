@@ -1,0 +1,72 @@
+@import "../Main/vars.scss";
+
+.introduction {
+    background: url("../Images/SectionOne/Rectangle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    &-container {
+        margin: 0 auto;
+        padding: 310px 0 339px;
+        max-width: 829px;
+
+        @media (max-width: $screen-m) {
+            padding: 290px 0 300px;
+        }
+
+        @media (max-width: $screen-xs) {
+            padding: 260px 0 270px;
+        }
+
+        @media (max-width: $screen-xxs) {
+            padding: 200px 0 200px;
+        }
+    }
+
+    &-name {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        font-family: $fontFam;
+        margin-bottom: 20px;
+
+        @media (max-width: $screen-xs) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-duties {
+        color: #fff;
+        font-family: $fontFam;
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 800;
+        line-height: 64px;
+
+        @media (max-width: $screen-m) {
+            font-size: 45px;
+        }
+
+        @media (max-width: $screen-s) {
+            font-size: 35px;
+        }
+
+        @media (max-width: $screen-xs) {
+            font-size: 30px;
+            line-height: 54px;
+        }
+
+        @media (max-width: $screen-xxs) {
+            margin: 0 20px 20px 20px;
+            font-size: 25px;
+            line-height: 34px;
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+    }
+}

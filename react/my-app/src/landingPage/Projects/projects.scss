@@ -1,0 +1,86 @@
+@import "../Main//vars.scss";
+
+.projects {
+    margin-top: 76px;
+    background: #f6f6f8;
+
+    @media (max-width: $screen-5iphone) {
+        margin-top: 0;
+    }
+
+    &-container {
+        display: grid;
+        justify-content: center;
+
+        @media (max-width: $screen-l) {
+            padding: 0 10px;
+        }
+    }
+
+    &-about {
+        margin-top: 100px;
+
+        & > div {
+            margin-bottom: 50px;
+
+            @media (max-width: $screen-5iphone) {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: $screen-xs) {
+            margin-top: 70px;
+        }
+
+        @media (max-width: $screen-5iphone) {
+            padding: 0 10px;
+            margin-top: 30px;
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 130px;
+
+        @media (max-width: $screen-m) {
+            padding-top: 20px;
+        }
+
+        @media (max-width: $screen-xs) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: $screen-5iphone) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &-img-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 50px 0;
+
+        @media (max-width: $screen-m) {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin: 0 auto;
+        }
+
+        & img {
+            @media (max-width: $screen-l) {
+                max-width: 230px;
+            }
+
+            @media (max-width: $screen-xxxs) {
+                max-width: 158px;
+            }
+
+            @media (max-width: $screen-5iphone) {
+                max-width: 100px;
+            }
+        }
+    }
+}

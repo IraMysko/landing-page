@@ -1,0 +1,41 @@
+@import "../Main/vars.scss";
+
+.general-button {
+    display: inline-block;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $accent;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    padding: 13px 36px 15px;
+    border-radius: 30px;
+    font-family: $fontFam;
+
+    @media (max-width: $screen-xxs) {
+        font-size: 12px;
+        padding: 10px 26px 10px;
+    }
+
+    @media (max-width: $screen-5iphone) {
+        font-size: 10px;
+        padding: 12px 16px 10px;
+    }
+}
+
+.btn-services {
+    padding: 13px 53px 15px;
+    font-family: $fontFam;
+    white-space: nowrap;
+
+    @media (max-width: $screen-5iphone) {
+        padding: 13px;
+    }
+}
+
+.bnt-new-style {
+    border-radius: 0px 30px 30px 0px;
+    position: relative;
+    top: 0;
+    left: -20px;
+}

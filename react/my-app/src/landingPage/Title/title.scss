@@ -1,0 +1,40 @@
+@import "../Main/vars.scss";
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    color: $titlecolor;
+    font-family: $fontFam;
+    font-weight: bold;
+    line-height: 53px;
+
+    @media (max-width: $screen-s) {
+        font-size: 30px;
+    }
+
+    @media (max-width: $screen-xxs) {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    @media (max-width: $screen-5iphone) {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    &--left {
+        text-align: left;
+
+        @media (max-width: $screen-xxs) {
+            text-align: center;
+        }
+
+        @media (max-width: $screen-5iphone) {
+            text-align: left;
+        }
+    }
+
+    &--white {
+        color: #ffffff;
+    }
+}

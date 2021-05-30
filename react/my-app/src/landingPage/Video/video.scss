@@ -1,0 +1,149 @@
+@import "../Main//vars.scss";
+
+.video {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../Images/VideoPng/VideoPictures.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 570px;
+        z-index: -1;
+
+        @media (max-width: $screen-xxxs) {
+            height: 100%;
+        }
+    }
+
+    &-container {
+        border-bottom: 1px solid greey;
+    }
+
+    &-youTube {
+        @media (max-width: $screen-l) {
+            width: 800px;
+            height: 480px;
+        }
+
+        @media (max-width: $screen-m) {
+            width: 700px;
+            height: 430px;
+        }
+        @media (max-width: $screen-s) {
+            width: 600px;
+            height: 380px;
+        }
+
+        @media (max-width: $screen-xs) {
+            width: 500px;
+            height: 300px;
+        }
+
+        @media (max-width: $screen-xxxs) {
+            width: 300px;
+            height: 200px;
+        }
+    }
+
+    &-description {
+        padding: 70px 0 30px 0;
+    }
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        margin: 70px 0 85px 0;
+
+        @media (max-width: $screen-s) {
+            margin: 50px 0 45px 0;
+        }
+
+        @media (max-width: $screen-s) {
+            margin: 30px 0 55px 0;
+        }
+
+        @media (max-width: $screen-xxxs) {
+            margin: 15px 0 0 0;
+        }
+    }
+}
+
+.mailing {
+    text-align: center;
+
+    @media (max-width: $screen-xs) {
+        padding-top: 40px;
+    }
+
+    @media (max-width: $screen-xxs) {
+        padding-top: 27px;
+    }
+
+    &-box {
+        display: block;
+        margin-top: 10px;
+
+        @media (max-width: $screen-xxxs) {
+            display: flex;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    &-heading {
+        font-size: 18px;
+        font-family: $fontFam;
+        color: #000;
+        line-height: 22px;
+        font-weight: 600;
+    }
+
+    &-input {
+        border: 1px solid #eeeaea;
+        box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+        border-radius: 30px 0 0 30px;
+        color: #999999;
+        font-size: 12px;
+        padding: 13px 146px 13px 32px;
+        font-family: $fontFam;
+        line-height: 21px;
+        outline: 0 !important;
+        margin: 30px 0 35px 0;
+
+        @media (max-width: $screen-xxs) {
+            padding: 9px 26px 9px;
+            line-height: 0;
+            margin: 8px 0 13px 0;
+
+            &:active,
+            :hover,
+            :focus {
+                outline: 0 !important;
+            }
+        }
+    }
+
+    &-subtitle {
+        color: $subTitlecolor;
+        font-size: 13px;
+        font-family: $fontFam;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 85px;
+
+        @media (max-width: $screen-xs) {
+            margin-bottom: 35px;
+        }
+
+        @media (max-width: $screen-xxxs) {
+            color: white;
+            line-height: 15px;
+            font-size: 10px;
+        }
+    }
+}

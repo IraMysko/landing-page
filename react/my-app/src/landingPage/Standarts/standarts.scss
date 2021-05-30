@@ -1,0 +1,204 @@
+@import "../Main//vars.scss";
+
+.standarts {
+    background-color: #e5e5e5;
+    margin-top: 103px;
+
+    @media (max-width: $screen-l) {
+        padding: 0 10px;
+    }
+
+    @media (max-width: $screen-xs) {
+        padding-bottom: 35px;
+    }
+
+    @media (max-width: $screen-xxs) {
+        margin-top: 40px;
+    }
+}
+
+.preview {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding-top: 90px;
+    padding-bottom: 123px;
+    border-bottom: 1px solid #cac6c6;
+
+    @media (max-width: $screen-m) {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: $screen-s) {
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: $screen-xs) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: $screen-5iphone) {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    &-article {
+        max-width: 489px;
+        text-align: left;
+        margin: 65px 121px 0 0;
+
+        @media (max-width: $screen-m) {
+            padding-left: 20px;
+            margin: 0 100px 0 0;
+        }
+
+        @media (max-width: $screen-xs) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: $screen-5iphone) {
+            margin: 0;
+        }
+    }
+
+    &-img-container {
+        @media (max-width: $screen-xs) {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: $screen-m) {
+            padding-right: 20px;
+            max-width: 100%;
+        }
+    }
+
+    &-img {
+        @media (max-width: $screen-m) {
+            max-width: 401px;
+        }
+
+        @media (max-width: $screen-s) {
+            max-width: 300px;
+        }
+
+        @media (max-width: $screen-xs) {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    &-link {
+        color: $accent;
+        line-height: 20px;
+        font-size: 16px;
+        padding-bottom: 143px;
+        font-family: $fontFam;
+
+        @media (max-width: $screen-xs) {
+            text-align: center;
+        }
+
+        @media (max-width: $screen-5iphone) {
+            margin-left: 80px;
+            font-size: 10px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &-subtitle {
+        margin: 40px 0 30px 0;
+
+        @media (max-width: $screen-5iphone) {
+            margin: 20px 0 15px 0;
+        }
+    }
+}
+
+.slick {
+    &-dots {
+        @media (max-width: $screen-xs) {
+            padding-bottom: 10px;
+        }
+    }
+
+    &-prev {
+        @media (max-width: $screen-xs) {
+            padding-left: 10px;
+        }
+    }
+
+    &-next {
+        @media (max-width: $screen-xs) {
+            padding-right: 30px;
+        }
+    }
+}
+
+.projects-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 0 10px;
+
+    @media (max-width: $screen-s) {
+        margin-top: 20px;
+    }
+
+    @media (max-width: $screen-xs) {
+        display: none;
+    }
+
+    &-slider {
+        display: none;
+
+        @media (max-width: $screen-xs) {
+            display: block;
+            padding: 26px;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $screen-xs) {
+            justify-content: center;
+        }
+    }
+
+    &-qty {
+        color: #000000;
+        font-family: $fontFam;
+        font-size: 36px;
+        line-height: 53px;
+        margin-left: 20px;
+
+        @media (max-width: $screen-5iphone) {
+            font-size: 25px;
+            margin-left: 10px;
+        }
+    }
+
+    &-title {
+        font-family: $fontFam;
+        color: $subTitlecolor;
+        font-size: 16px;
+        margin-top: 17px;
+        margin-bottom: 60px;
+
+        @media (max-width: $screen-xs) {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: $screen-5iphone) {
+            font-size: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

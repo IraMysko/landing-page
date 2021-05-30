@@ -1,0 +1,27 @@
+@import "../Main/vars.scss";
+
+.heading {
+    font-size: 18px;
+    color: $titlecolor;
+    font-family: $fontFam;
+    font-weight: bold;
+
+    @media (max-width: $screen-xs) {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    @media (max-width: $screen-xxs) {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    @media (max-width: $screen-5iphone) {
+        font-size: 13px;
+        line-height: 33px;
+    }
+
+    &--white {
+        color: white;
+    }
+}

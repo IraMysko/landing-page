@@ -1,0 +1,129 @@
+@import "../Main/vars.scss";
+
+.services {
+    padding-top: 110px;
+
+    @media (max-width: $screen-xs) {
+        padding-top: 70px;
+    }
+
+    @media (max-width: $screen-xxs) {
+        padding-top: 30px;
+    }
+
+    &-title {
+        margin: 50px 0 70px;
+
+        @media (max-width: $screen-xs) {
+            margin: 20px 0 40px;
+        }
+    }
+
+    &-block {
+        margin: 0 auto;
+        max-width: 739px;
+
+        @media (max-width: $screen-xs) {
+            padding: 0 10px 0 10px;
+        }
+
+        @media (max-width: $screen-xxs) {
+            margin: 0;
+            padding: 0 10px 0 10px;
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.catalogue {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $screen-l) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: $screen-s) {
+        padding: 10px;
+    }
+    @media (max-width: $screen-xs) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-box {
+        display: flex;
+
+        &:nth-child(2) {
+            margin: 0 20px;
+
+            @media (max-width: $screen-xs) {
+                margin: 0;
+            }
+        }
+    }
+
+    &-text {
+        margin: 25px 0 55px 17px;
+        max-width: 226px;
+        @media (max-width: $screen-xs) {
+            margin: 0px 0 55px 17px;
+        }
+    }
+
+    &-title {
+        font-size: 18px;
+        color: #000000;
+        font-weight: 600;
+        line-height: 22px;
+
+        @media (max-width: $screen-m) {
+            font-size: 16px;
+        }
+    }
+
+    &-description {
+        color: $subTitlecolor;
+
+        @media (max-width: $screen-m) {
+            font-size: 13px;
+        }
+    }
+
+    &-border {
+        width: 110px;
+        height: 110px;
+        border: 1px solid #e0e0e0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        @media (max-width: $screen-m) {
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+        }
+
+        &:after {
+            content: url(../Images/SolutionsIcon/project.svg);
+            border: 1px solid $accent;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: $screen-m) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
